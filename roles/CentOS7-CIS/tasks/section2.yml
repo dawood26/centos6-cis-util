@@ -287,6 +287,7 @@
     - level1
     - patch
     - rule_2.2.1.1
+  ignore_errors: yes
 
 - name: "NOTSCORED | 2.2.1.1 | PATCH | Ensure time synchronization is in use - service start"
   service:
@@ -300,6 +301,7 @@
     - level1
     - patch
     - rule_2.2.1.1
+  ignore_errors: yes
 
 - name: "NOTSCORED | 2.2.1.1 | PATCH | Ensure time synchronization is in use - service stop ntp"
   service:
@@ -314,6 +316,7 @@
     - level1
     - patch
     - rule_2.2.1.1
+  ignore_errors: yes
 
 - name: "NOTSCORED | 2.2.1.1 | PATCH | Ensure time synchronization is in use - service stop chrony"
   service:
