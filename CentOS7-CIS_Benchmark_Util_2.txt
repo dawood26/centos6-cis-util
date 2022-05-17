@@ -1,0 +1,2151 @@
+
+PLAY [preprod] ******************************************************************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : Check OS version and family] ********************************************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : Check OS version and family] ********************************************************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan] => {
+    "msg": "PASS | This role can only be executed on CentOS 7 operating systems"
+}
+ok: [util02.dms02.tt076.lan] => {
+    "msg": "PASS | This role can only be executed on CentOS 7 operating systems"
+}
+ok: [util04.dms02.tt076.lan] => {
+    "msg": "PASS | This role can only be executed on CentOS 7 operating systems"
+}
+
+TASK [CentOS7-CIS : Check ansible version] **************************************************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : Check ansible version] **************************************************************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan] => {
+    "msg": "PASS | The detected Ansible version is greater than 2.5"
+}
+ok: [util02.dms02.tt076.lan] => {
+    "msg": "PASS | The detected Ansible version is greater than 2.5"
+}
+ok: [util04.dms02.tt076.lan] => {
+    "msg": "PASS | The detected Ansible version is greater than 2.5"
+}
+
+TASK [CentOS7-CIS : PRELIM | List users accounts] *******************************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Gather accounts with empty password fields] ********************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Gather UID 0 accounts other than root] *************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Section 4.1 | Configure System Accounting (auditd)] ************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Section 5.1 | Configure cron] **********************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check if prelink package is installed] *************************************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check if postfix package is installed] *************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check if rsyslog package is installed] *************************************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check if syslog-ng package is installed] ***********************************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for xinetd service] **************************************************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for ntpd service] ****************************************************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for chronyd service] *************************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for avahi-daemon service] ********************************************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for cups service] ****************************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for dhcpd service] ***************************************************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for slapd service] ***************************************************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for nfs service] *****************************************************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for rpcbind service] *************************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for named service] ***************************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for vsftpd service] **************************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for httpd service] ***************************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for dovecot service] *************************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for smb service] *****************************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for squid service] ***************************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for snmpd service] ***************************************************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for ypserv service] **************************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for rsh.socket service] **********************************************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for rlogin.socket service] *******************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for rexec.socket service] ********************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for telnet service] **************************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for tftp service] ****************************************************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for rsyncd service] **************************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for ntalk service] ***************************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : PRELIM | Check for autofs service] **************************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.1.1 | PATCH | Ensure mounting of cramfs filesystems is disabled] *******************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.1.2 | PATCH | Ensure mounting of freevxfs filesystems is disabled] *****************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.1.3 | PATCH | Ensure mounting of jffs2 filesystems is disabled] ********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.1.4 | PATCH | Ensure mounting of hfs filesystems is disabled] **********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.1.5 | PATCH | Ensure mounting of hfsplus filesystems is disabled] ******************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.1.6 | PATCH | Ensure mounting of squashfs filesystems is disabled] *****************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.1.7 | PATCH | Ensure mounting of udf filesystems is disabled] **********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.1.8 | PATCH | Ensure mounting of FAT filesystems is disabled] **********************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.2 | PATCH | Ensure separate partition exists for /tmp | enable and start/restart tmp.mount] ****************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.3 | PATCH | Ensure nodev option set on /tmp partition
+ SCORED | 1.1.4 | PATCH | Ensure nosuid option set on /tmp partition
+ SCORED | 1.1.5 | PATCH | Ensure noexec option set on /tmp partition
+ | drop custom tmp.mount] ***
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.6 | PATCH | Ensure separate partition exists for /var] *****************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.7 | PATCH | Ensure separate partition exists for /var/tmp] *************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.8 | PATCH | Ensure nodev option set on /var/tmp partition
+ SCORED | 1.1.9 | PATCH | Ensure nosuid option set on /var/tmp partition
+ SCORED | 1.1.10 | PATCH | Ensure noexec option set on /var/tmp partition] ***
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.11 | PATCH | Ensure separate partition exists for /var/log] ************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.12 | PATCH | Ensure separate partition exists for /var/log/audit] ******************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.13 | PATCH | Ensure separate partition exists for /home] ***************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.14 | PATCH | Ensure nodev option set on /home partition] ***************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan] => (item={u'block_used': 6872, u'uuid': u'be800cc4-b40f-46ff-a550-e171ab6e02e4', u'size_total': 533368832, u'block_total': 130217, u'mount': u'/tmp', u'block_available': 123345, u'size_available': 505221120, u'fstype': u'xfs', u'inode_total': 262144, u'inode_available': 261844, u'device': u'/dev/mapper/vg_system-lv_tmp', u'inode_used': 300, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util01.dms02.tt076.lan] => (item={u'block_used': 189677, u'uuid': u'422ece69-b174-41f0-8f3b-021c6d5ae15d', u'size_total': 2136997888, u'block_total': 521728, u'mount': u'/var', u'block_available': 332051, u'size_available': 1360080896, u'fstype': u'xfs', u'inode_total': 1048576, u'inode_available': 1004912, u'device': u'/dev/mapper/vg_system-lv_var', u'inode_used': 43664, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util01.dms02.tt076.lan] => (item={u'block_used': 352056, u'uuid': u'1e827330-c234-47d4-9791-111eace8a187', u'size_total': 2136997888, u'block_total': 521728, u'mount': u'/home', u'block_available': 169672, u'size_available': 694976512, u'fstype': u'xfs', u'inode_total': 1048576, u'inode_available': 1046316, u'device': u'/dev/mapper/vg_system-lv_home', u'inode_used': 2260, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util02.dms02.tt076.lan] => (item={u'block_used': 73793, u'uuid': u'422ece69-b174-41f0-8f3b-021c6d5ae15d', u'size_total': 2136997888, u'block_total': 521728, u'mount': u'/var', u'block_available': 447935, u'size_available': 1834741760, u'fstype': u'xfs', u'inode_total': 1048576, u'inode_available': 1045591, u'device': u'/dev/mapper/vg_system-lv_var', u'inode_used': 2985, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util02.dms02.tt076.lan] => (item={u'block_used': 6869, u'uuid': u'be800cc4-b40f-46ff-a550-e171ab6e02e4', u'size_total': 533368832, u'block_total': 130217, u'mount': u'/tmp', u'block_available': 123348, u'size_available': 505233408, u'fstype': u'xfs', u'inode_total': 262144, u'inode_available': 261989, u'device': u'/dev/mapper/vg_system-lv_tmp', u'inode_used': 155, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util02.dms02.tt076.lan] => (item={u'block_used': 133038, u'uuid': u'1e827330-c234-47d4-9791-111eace8a187', u'size_total': 1063256064, u'block_total': 259584, u'mount': u'/home', u'block_available': 126546, u'size_available': 518332416, u'fstype': u'xfs', u'inode_total': 524288, u'inode_available': 524062, u'device': u'/dev/mapper/vg_system-lv_home', u'inode_used': 226, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util01.dms02.tt076.lan] => (item={u'block_used': 68995, u'uuid': u'73746f3b-2f58-4957-9dfe-33deef167911', u'size_total': 533368832, u'block_total': 130217, u'mount': u'/boot', u'block_available': 61222, u'size_available': 250765312, u'fstype': u'xfs', u'inode_total': 262144, u'inode_available': 261795, u'device': u'/dev/sda1', u'inode_used': 349, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util01.dms02.tt076.lan] => (item={u'block_used': 15317, u'uuid': u'e1219065-dc9b-4c10-9c1f-718dfd53f055', u'size_total': 533368832, u'block_total': 130217, u'mount': u'/var/log/audit', u'block_available': 114900, u'size_available': 470630400, u'fstype': u'xfs', u'inode_total': 262144, u'inode_available': 262136, u'device': u'/dev/mapper/vg_system-lv_varlogaudit', u'inode_used': 8, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util01.dms02.tt076.lan] => (item={u'block_used': 477345, u'uuid': u'17a026d0-c864-44e3-b5a2-41d857f0df7e', u'size_total': 4284481536, u'block_total': 1046016, u'mount': u'/', u'block_available': 568671, u'size_available': 2329276416, u'fstype': u'xfs', u'inode_total': 2097152, u'inode_available': 2036992, u'device': u'/dev/mapper/vg_system-lv_root', u'inode_used': 60160, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util01.dms02.tt076.lan] => (item={u'block_used': 824213, u'uuid': u'8bd137ab-18ff-4858-8fc3-2dd89358153a', u'size_total': 5358223360, u'block_total': 1308160, u'mount': u'/var/log', u'block_available': 483947, u'size_available': 1982246912, u'fstype': u'xfs', u'inode_total': 2621440, u'inode_available': 2620405, u'device': u'/dev/mapper/vg_system-lv_varlog', u'inode_used': 1035, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util01.dms02.tt076.lan] => (item={u'block_used': 8248, u'uuid': u'a480e848-1d3e-4a07-8fd5-6f4f577d8de4', u'size_total': 1063256064, u'block_total': 259584, u'mount': u'/opt', u'block_available': 251336, u'size_available': 1029472256, u'fstype': u'xfs', u'inode_total': 524288, u'inode_available': 524285, u'device': u'/dev/mapper/vg_system-lv_opt', u'inode_used': 3, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util01.dms02.tt076.lan] => (item={u'block_used': 6633, u'uuid': u'c6d80faf-80a7-4391-8c41-81e220e296f0', u'size_total': 533368832, u'block_total': 130217, u'mount': u'/var/tmp', u'block_available': 123584, u'size_available': 506200064, u'fstype': u'xfs', u'inode_total': 262144, u'inode_available': 262135, u'device': u'/dev/mapper/vg_system-lv_vartmp', u'inode_used': 9, u'block_size': 4096, u'options': u'rw,seclabel,nosuid,nodev,noexec,relatime,attr2,inode64,noquota'}) 
+skipping: [util02.dms02.tt076.lan] => (item={u'block_used': 68995, u'uuid': u'73746f3b-2f58-4957-9dfe-33deef167911', u'size_total': 533368832, u'block_total': 130217, u'mount': u'/boot', u'block_available': 61222, u'size_available': 250765312, u'fstype': u'xfs', u'inode_total': 262144, u'inode_available': 261795, u'device': u'/dev/sda1', u'inode_used': 349, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util02.dms02.tt076.lan] => (item={u'block_used': 17461, u'uuid': u'e1219065-dc9b-4c10-9c1f-718dfd53f055', u'size_total': 533368832, u'block_total': 130217, u'mount': u'/var/log/audit', u'block_available': 112756, u'size_available': 461848576, u'fstype': u'xfs', u'inode_total': 262144, u'inode_available': 262136, u'device': u'/dev/mapper/vg_system-lv_varlogaudit', u'inode_used': 8, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util02.dms02.tt076.lan] => (item={u'block_used': 386726, u'uuid': u'17a026d0-c864-44e3-b5a2-41d857f0df7e', u'size_total': 4284481536, u'block_total': 1046016, u'mount': u'/', u'block_available': 659290, u'size_available': 2700451840, u'fstype': u'xfs', u'inode_total': 2097152, u'inode_available': 2053302, u'device': u'/dev/mapper/vg_system-lv_root', u'inode_used': 43850, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util02.dms02.tt076.lan] => (item={u'block_used': 12481, u'uuid': u'8bd137ab-18ff-4858-8fc3-2dd89358153a', u'size_total': 1063256064, u'block_total': 259584, u'mount': u'/var/log', u'block_available': 247103, u'size_available': 1012133888, u'fstype': u'xfs', u'inode_total': 524288, u'inode_available': 523998, u'device': u'/dev/mapper/vg_system-lv_varlog', u'inode_used': 290, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util02.dms02.tt076.lan] => (item={u'block_used': 8248, u'uuid': u'a480e848-1d3e-4a07-8fd5-6f4f577d8de4', u'size_total': 1063256064, u'block_total': 259584, u'mount': u'/opt', u'block_available': 251336, u'size_available': 1029472256, u'fstype': u'xfs', u'inode_total': 524288, u'inode_available': 524285, u'device': u'/dev/mapper/vg_system-lv_opt', u'inode_used': 3, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util04.dms02.tt076.lan] => (item={u'block_used': 6692, u'uuid': u'be800cc4-b40f-46ff-a550-e171ab6e02e4', u'size_total': 533368832, u'block_total': 130217, u'mount': u'/tmp', u'block_available': 123525, u'size_available': 505958400, u'fstype': u'xfs', u'inode_total': 262144, u'inode_available': 262123, u'device': u'/dev/mapper/vg_system-lv_tmp', u'inode_used': 21, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util04.dms02.tt076.lan] => (item={u'block_used': 104061, u'uuid': u'422ece69-b174-41f0-8f3b-021c6d5ae15d', u'size_total': 2136997888, u'block_total': 521728, u'mount': u'/var', u'block_available': 417667, u'size_available': 1710764032, u'fstype': u'xfs', u'inode_total': 1048576, u'inode_available': 1045058, u'device': u'/dev/mapper/vg_system-lv_var', u'inode_used': 3518, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util04.dms02.tt076.lan] => (item={u'block_used': 8862, u'uuid': u'1e827330-c234-47d4-9791-111eace8a187', u'size_total': 1063256064, u'block_total': 259584, u'mount': u'/home', u'block_available': 250722, u'size_available': 1026957312, u'fstype': u'xfs', u'inode_total': 524288, u'inode_available': 524198, u'device': u'/dev/mapper/vg_system-lv_home', u'inode_used': 90, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util02.dms02.tt076.lan] => (item={u'block_used': 6617, u'uuid': u'c6d80faf-80a7-4391-8c41-81e220e296f0', u'size_total': 533368832, u'block_total': 130217, u'mount': u'/var/tmp', u'block_available': 123600, u'size_available': 506265600, u'fstype': u'xfs', u'inode_total': 262144, u'inode_available': 262139, u'device': u'/dev/mapper/vg_system-lv_vartmp', u'inode_used': 5, u'block_size': 4096, u'options': u'rw,seclabel,nosuid,nodev,noexec,relatime,attr2,inode64,noquota'}) 
+skipping: [util04.dms02.tt076.lan] => (item={u'block_used': 57883, u'uuid': u'73746f3b-2f58-4957-9dfe-33deef167911', u'size_total': 533368832, u'block_total': 130217, u'mount': u'/boot', u'block_available': 72334, u'size_available': 296280064, u'fstype': u'xfs', u'inode_total': 262144, u'inode_available': 261802, u'device': u'/dev/sda1', u'inode_used': 342, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util04.dms02.tt076.lan] => (item={u'block_used': 15804, u'uuid': u'e1219065-dc9b-4c10-9c1f-718dfd53f055', u'size_total': 533368832, u'block_total': 130217, u'mount': u'/var/log/audit', u'block_available': 114413, u'size_available': 468635648, u'fstype': u'xfs', u'inode_total': 262144, u'inode_available': 262136, u'device': u'/dev/mapper/vg_system-lv_varlogaudit', u'inode_used': 8, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util04.dms02.tt076.lan] => (item={u'block_used': 436898, u'uuid': u'17a026d0-c864-44e3-b5a2-41d857f0df7e', u'size_total': 4284481536, u'block_total': 1046016, u'mount': u'/', u'block_available': 609118, u'size_available': 2494947328, u'fstype': u'xfs', u'inode_total': 2097152, u'inode_available': 2053650, u'device': u'/dev/mapper/vg_system-lv_root', u'inode_used': 43502, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util04.dms02.tt076.lan] => (item={u'block_used': 19223, u'uuid': u'8bd137ab-18ff-4858-8fc3-2dd89358153a', u'size_total': 1063256064, u'block_total': 259584, u'mount': u'/var/log', u'block_available': 240361, u'size_available': 984518656, u'fstype': u'xfs', u'inode_total': 524288, u'inode_available': 523911, u'device': u'/dev/mapper/vg_system-lv_varlog', u'inode_used': 377, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util04.dms02.tt076.lan] => (item={u'block_used': 725081, u'uuid': u'a480e848-1d3e-4a07-8fd5-6f4f577d8de4', u'size_total': 5358223360, u'block_total': 1308160, u'mount': u'/opt', u'block_available': 583079, u'size_available': 2388291584, u'fstype': u'xfs', u'inode_total': 2621440, u'inode_available': 2587579, u'device': u'/dev/mapper/vg_system-lv_opt', u'inode_used': 33861, u'block_size': 4096, u'options': u'rw,seclabel,relatime,attr2,inode64,noquota'}) 
+skipping: [util04.dms02.tt076.lan] => (item={u'block_used': 6633, u'uuid': u'c6d80faf-80a7-4391-8c41-81e220e296f0', u'size_total': 533368832, u'block_total': 130217, u'mount': u'/var/tmp', u'block_available': 123584, u'size_available': 506200064, u'fstype': u'xfs', u'inode_total': 262144, u'inode_available': 262137, u'device': u'/dev/mapper/vg_system-lv_vartmp', u'inode_used': 7, u'block_size': 4096, u'options': u'rw,seclabel,nosuid,nodev,noexec,relatime,attr2,inode64,noquota'}) 
+
+TASK [CentOS7-CIS : SCORED | 1.1.15 | PATCH | Ensure nodev option set on /dev/shm partition
+ SCORED | 1.1.16 | PATCH | Ensure nosuid option set on /dev/shm partition
+ SCORED | 1.1.17 | PATCH | Ensure noexec option set on /dev/shm partition] ***
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 1.1.18 | PATCH | Ensure nodev option set on removable media partitions] *************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 1.1.19 | PATCH | Ensure nosuid option set on removable media partitions] ************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 1.1.20 | PATCH | Ensure noexec option set on removable media partitions] ************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.21 | PATCH | Ensure sticky bit is set on all world-writable directories] ***********************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.1.22 | PATCH | Disable Automounting] *************************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 1.2.1 | PATCH | Ensure package manager repositories are configured] *****************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.2.2 | PATCH | Ensure gpgcheck is globally activated] *********************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.2.2 | PATCH | Ensure gpgcheck is globally activated] *********************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.2.2 | PATCH | Ensure gpgcheck is globally activated] *********************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-Base.repo', u'xusr': False, u'atime': 1641844672.573662, u'inode': 6310421, u'isgid': False, u'size': 1664, u'isdir': False, u'ctime': 1615983682.4823768, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util02.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-Base.repo', u'xusr': False, u'atime': 1641844671.5114224, u'inode': 6310330, u'isgid': False, u'size': 1664, u'isdir': False, u'ctime': 1615983903.0596468, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-Base.repo', u'xusr': False, u'atime': 1641844672.4715886, u'inode': 6543437, u'isgid': False, u'size': 1664, u'isdir': False, u'ctime': 1615984591.7760472, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util02.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-CR.repo', u'xusr': False, u'atime': 1641844671.5144227, u'inode': 6298505, u'isgid': False, u'size': 1309, u'isdir': False, u'ctime': 1615983903.060647, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-CR.repo', u'xusr': False, u'atime': 1641844672.608665, u'inode': 6298505, u'isgid': False, u'size': 1309, u'isdir': False, u'ctime': 1615983682.4893775, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-CR.repo', u'xusr': False, u'atime': 1641844672.4835896, u'inode': 6298505, u'isgid': False, u'size': 1309, u'isdir': False, u'ctime': 1615984591.7930486, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util02.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-Debuginfo.repo', u'xusr': False, u'atime': 1641844671.5154228, u'inode': 6298506, u'isgid': False, u'size': 649, u'isdir': False, u'ctime': 1615983903.060647, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-Debuginfo.repo', u'xusr': False, u'atime': 1641844672.6126652, u'inode': 6298506, u'isgid': False, u'size': 649, u'isdir': False, u'ctime': 1615983682.4893775, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-Debuginfo.repo', u'xusr': False, u'atime': 1641844672.4855897, u'inode': 6298506, u'isgid': False, u'size': 649, u'isdir': False, u'ctime': 1615984591.7940488, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util02.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-Media.repo', u'xusr': False, u'atime': 1641844671.516423, u'inode': 6298507, u'isgid': False, u'size': 630, u'isdir': False, u'ctime': 1615983903.060647, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-Media.repo', u'xusr': False, u'atime': 1641844672.6156654, u'inode': 6298507, u'isgid': False, u'size': 630, u'isdir': False, u'ctime': 1615983682.4893775, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-Media.repo', u'xusr': False, u'atime': 1641844672.4865897, u'inode': 6298507, u'isgid': False, u'size': 630, u'isdir': False, u'ctime': 1615984591.7940488, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util02.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-Sources.repo', u'xusr': False, u'atime': 1641844671.517423, u'inode': 6298508, u'isgid': False, u'size': 1331, u'isdir': False, u'ctime': 1615983903.0616472, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-Sources.repo', u'xusr': False, u'atime': 1641844672.48859, u'inode': 6298508, u'isgid': False, u'size': 1331, u'isdir': False, u'ctime': 1615984591.795049, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-Sources.repo', u'xusr': False, u'atime': 1641844672.6436677, u'inode': 6298508, u'isgid': False, u'size': 1331, u'isdir': False, u'ctime': 1615983682.4903774, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util02.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-Vault.repo', u'xusr': False, u'atime': 1641844671.5194232, u'inode': 6298509, u'isgid': False, u'size': 8515, u'isdir': False, u'ctime': 1615983903.062647, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-Vault.repo', u'xusr': False, u'atime': 1641844672.4915903, u'inode': 6298509, u'isgid': False, u'size': 8515, u'isdir': False, u'ctime': 1615984591.7960489, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-Vault.repo', u'xusr': False, u'atime': 1641844672.6506684, u'inode': 6298509, u'isgid': False, u'size': 8515, u'isdir': False, u'ctime': 1615983682.4903774, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util02.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-fasttrack.repo', u'xusr': False, u'atime': 1641844671.543425, u'inode': 6298510, u'isgid': False, u'size': 314, u'isdir': False, u'ctime': 1615983903.062647, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-fasttrack.repo', u'xusr': False, u'atime': 1641844672.5235927, u'inode': 6298510, u'isgid': False, u'size': 314, u'isdir': False, u'ctime': 1615984591.7960489, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-fasttrack.repo', u'xusr': False, u'atime': 1641844672.6786706, u'inode': 6298510, u'isgid': False, u'size': 314, u'isdir': False, u'ctime': 1615983682.4903774, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util02.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-x86_64-kernel.repo', u'xusr': False, u'atime': 1641844671.543425, u'inode': 6298511, u'isgid': False, u'size': 616, u'isdir': False, u'ctime': 1615983903.062647, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1604176429.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/epel-testing.repo', u'xusr': False, u'atime': 1641844672.5325935, u'inode': 6369047, u'isgid': False, u'size': 1149, u'isdir': False, u'ctime': 1615984716.3099623, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1604176429.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/epel.repo', u'xusr': False, u'atime': 1641844672.5415943, u'inode': 6369048, u'isgid': False, u'size': 1050, u'isdir': False, u'ctime': 1615984716.3139625, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1604176429.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/epel-testing.repo', u'xusr': False, u'atime': 1641844672.681671, u'inode': 6543393, u'isgid': False, u'size': 1149, u'isdir': False, u'ctime': 1615983774.917809, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-x86_64-kernel.repo', u'xusr': False, u'atime': 1641844672.525593, u'inode': 6298511, u'isgid': False, u'size': 616, u'isdir': False, u'ctime': 1615984591.797049, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1604176429.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/epel.repo', u'xusr': False, u'atime': 1641844672.6986723, u'inode': 6601809, u'isgid': False, u'size': 1050, u'isdir': False, u'ctime': 1615983774.9218092, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1606144121.0, u'gr_name': u'root', u'path': u'/etc/yum.repos.d/CentOS-x86_64-kernel.repo', u'xusr': False, u'atime': 1641844672.6796706, u'inode': 6298511, u'isgid': False, u'size': 616, u'isdir': False, u'ctime': 1615983682.4913776, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+
+TASK [CentOS7-CIS : NOTSCORED | 1.2.3 | PATCH | Ensure GPG keys are configured] *************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.3.1 | PATCH | Ensure AIDE is installed] **********************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.3.1 | PATCH | Ensure AIDE is installed] **********************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.3.2 | PATCH | Ensure filesystem integrity is regularly checked] **********************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.3.2 | PATCH | Ensure filesystem integrity is regularly checked] **********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.4.1 | PATCH | Ensure permissions on bootloader config are configured] ****************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.4.1 | PATCH | Ensure permissions on bootloader config are configured] ****************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 1.4.3 | PATCH | Ensure authentication required for single user mode] ****************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.5.1 | PATCH | Ensure core dumps are restricted] **************************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.5.1 | PATCH | Ensure core dumps are restricted] **************************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 1.5.2 | PATCH | Ensure XD/NX support is enabled] ************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.5.3 | PATCH | Ensure address space layout randomization (ASLR) is enabled] ***********************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.5.4 | PATCH | Ensure prelink is disabled] ********************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.5.4 | PATCH | Ensure prelink is disabled] ********************************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.6.1.1 | PATCH | Ensure SELinux is not disabled in bootloader configuration] **********************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.6.1.2 | PATCH | Ensure the SELinux state is enforcing] *******************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.6.1.3 | PATCH | Ensure SELinux policy is configured] *********************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.6.1.4 | PATCH | Ensure SETroubleshoot is not installed] ******************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.6.1.5 | PATCH | Ensure the MCS Translation Service (mcstrans) is not installed] ******************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.6.2 | PATCH | Ensure SELinux is installed] *******************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.7.1.1 | PATCH | Ensure message of the day is configured properly] ********************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 1.7.1.2 | PATCH | Ensure local login warning banner is configured properly] *********************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 1.7.1.3 | PATCH | Ensure remote login warning banner is configured properly] ********************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 1.7.1.4 | PATCH | Ensure permissions on /etc/motd are configured] *******************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 1.7.1.5 | PATCH | Ensure permissions on /etc/issue are configured] *********************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 1.7.1.6 | PATCH | Ensure permissions on /etc/issue.net are configured] **************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 1.8 | PATCH | Ensure updates, patches, and additional security software are installed] **********************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.1 | PATCH | Ensure chargen services are not enabled | chargen-dgram] ***************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.1 | PATCH | Ensure chargen services are not enabled | chargen-dgram] ***************************************************************************************************************************************
+changed: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+changed: [util02.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.1 | PATCH | Ensure chargen services are not enabled | chargen-stream] **************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.1 | PATCH | Ensure chargen services are not enabled | chargen-stream] **************************************************************************************************************************************
+changed: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+changed: [util02.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.2 | PATCH | Ensure daytime services are not enabled | daytime-dgram] ***************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.2 | PATCH | Ensure daytime services are not enabled | daytime-dgram] ***************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.2 | PATCH | Ensure daytime services are not enabled | daytime-stream] **************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.2 | PATCH | Ensure daytime services are not enabled | daytime-stream] **************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.3 | PATCH | Ensure discard services are not enabled | discard-dgram] ***************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.3 | PATCH | Ensure discard services are not enabled | discard-dgram] ***************************************************************************************************************************************
+changed: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+changed: [util02.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.3 | PATCH | Ensure discard services are not enabled | discard-stream] **************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.3 | PATCH | Ensure discard services are not enabled | discard-stream] **************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.4 | PATCH | Ensure echo services are not enabled | echo-dgram] *********************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.4 | PATCH | Ensure echo services are not enabled | echo-dgram] *********************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.4 | PATCH | Ensure echo services are not enabled | echo-stream] ********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.4 | PATCH | Ensure echo services are not enabled | echo-stream] ********************************************************************************************************************************************
+changed: [util01.dms02.tt076.lan]
+changed: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.5 | PATCH | Ensure time services are not enabled | time-dgram] *********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.5 | PATCH | Ensure time services are not enabled | time-dgram] *********************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.5 | PATCH | Ensure time services are not enabled | time-stream] ********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.5 | PATCH | Ensure time services are not enabled | time-stream] ********************************************************************************************************************************************
+changed: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+changed: [util02.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.6 | PATCH | Ensure tftp server is not enabled] *************************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.1.6 | PATCH | Ensure tftp server is not enabled] *************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 2.2.1.1 | PATCH | Ensure time synchronization is in use - service install] **********************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 2.2.1.1 | PATCH | Ensure time synchronization is in use - service start] ************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 2.2.1.1 | PATCH | Ensure time synchronization is in use - service stop ntp] *********************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 2.2.1.1 | PATCH | Ensure time synchronization is in use - service stop chrony] ******************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.1.2 | PATCH | Ensure ntp is configured | modify /etc/ntp.conf] *********************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.1.2 | PATCH | Ensure ntp is configured | modify /etc/sysconfig/ntpd] ***************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.1.2 | PATCH | Ensure ntp is configured | modify /usr/lib/systemd/system/ntpd.service] **********************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.1.3 | PATCH | Ensure chrony is configured] *****************************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan] => (item=0.pool.ntp.org)
+ok: [util04.dms02.tt076.lan] => (item=0.pool.ntp.org)
+ok: [util02.dms02.tt076.lan] => (item=0.pool.ntp.org)
+ok: [util02.dms02.tt076.lan] => (item=1.pool.ntp.org)
+ok: [util01.dms02.tt076.lan] => (item=1.pool.ntp.org)
+ok: [util04.dms02.tt076.lan] => (item=1.pool.ntp.org)
+ok: [util04.dms02.tt076.lan] => (item=2.pool.ntp.org)
+ok: [util02.dms02.tt076.lan] => (item=2.pool.ntp.org)
+ok: [util01.dms02.tt076.lan] => (item=2.pool.ntp.org)
+ok: [util02.dms02.tt076.lan] => (item=3.pool.ntp.org)
+ok: [util01.dms02.tt076.lan] => (item=3.pool.ntp.org)
+ok: [util04.dms02.tt076.lan] => (item=3.pool.ntp.org)
+
+TASK [CentOS7-CIS : SCORED | 2.2.1.3 | PATCH | Ensure chrony is configured | modify /etc/sysconfig/chronyd] *********************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.1.3 | PATCH | Ensure chrony is configured | modify /etc/sysconfig/chronyd] *********************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.2 | PATCH | Ensure X Window System is not installed] *******************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan] => (item=[u'@X Window System', u'xorg-x11*'])
+ok: [util04.dms02.tt076.lan] => (item=[u'@X Window System', u'xorg-x11*'])
+ok: [util01.dms02.tt076.lan] => (item=[u'@X Window System', u'xorg-x11*'])
+
+TASK [CentOS7-CIS : SCORED | 2.2.3 | PATCH | Ensure Avahi Server is not enabled] ************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.4 | PATCH | Ensure CUPS is not enabled] ********************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.5 | PATCH | Ensure DHCP Server is not enabled] *************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.7 | PATCH | Ensure NFS and RPC are not enabled] ************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.11 | PATCH | Ensure IMAP and POP3 server is not enabled] ***************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.12 | PATCH | Ensure Samba is not enabled] ******************************************************************************************************************************************************************
+skipping: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.13 | PATCH | Ensure HTTP Proxy Server is not enabled] ******************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.14 | PATCH | Ensure SNMP Server is not enabled] ************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.15 | PATCH | Ensure mail transfer agent is configured for local-only mode] *********************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.16 | PATCH | Ensure NIS Server is not enabled] *************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.17 | PATCH | Ensure rsh server is not enabled | rsh] *******************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.17 | PATCH | Ensure rsh server is not enabled | rlogin] ****************************************************************************************************************************************************
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+skipping: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.17 | PATCH | Ensure rsh server is not enabled | rexec] *****************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.19 | PATCH | Ensure tftp server is not enabled] ************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.2.21 | PATCH | Ensure talk server is not enabled] ************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.3.1 | PATCH | Ensure NIS Client is not installed] ************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.3.2 | PATCH | Ensure rsh client is not installed] ************************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 2.3.3 | PATCH | Ensure talk client is not installed] ***********************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 3.1.1 | PATCH | Ensure IP forwarding is disabled] **************************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 3.1.2 | PATCH | Ensure packet redirect sending is disabled] ****************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.send_redirects', u'value': 0})
+ok: [util01.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.send_redirects', u'value': 0})
+changed: [util04.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.send_redirects', u'value': 0})
+ok: [util02.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.send_redirects', u'value': 0})
+ok: [util01.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.send_redirects', u'value': 0})
+changed: [util04.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.send_redirects', u'value': 0})
+
+TASK [CentOS7-CIS : SCORED | 3.2.1 | PATCH | Ensure source routed packets are not accepted] *************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.accept_source_route', u'value': 0})
+ok: [util01.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.accept_source_route', u'value': 0})
+changed: [util04.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.accept_source_route', u'value': 0})
+ok: [util02.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.accept_source_route', u'value': 0})
+ok: [util01.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.accept_source_route', u'value': 0})
+changed: [util04.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.accept_source_route', u'value': 0})
+
+TASK [CentOS7-CIS : SCORED | 3.2.2 | PATCH | Ensure ICMP redirects are not accepted] ********************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.accept_redirects', u'value': 0})
+ok: [util01.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.accept_redirects', u'value': 0})
+changed: [util04.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.accept_redirects', u'value': 0})
+ok: [util02.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.accept_redirects', u'value': 0})
+ok: [util01.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.accept_redirects', u'value': 0})
+changed: [util04.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.accept_redirects', u'value': 0})
+
+TASK [CentOS7-CIS : SCORED | 3.2.3 | PATCH | Ensure secure ICMP redirects are not accepted] *************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.secure_redirects', u'value': 0})
+changed: [util04.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.secure_redirects', u'value': 0})
+ok: [util02.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.secure_redirects', u'value': 0})
+ok: [util01.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.secure_redirects', u'value': 0})
+ok: [util02.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.secure_redirects', u'value': 0})
+changed: [util04.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.secure_redirects', u'value': 0})
+
+TASK [CentOS7-CIS : SCORED | 3.2.4 | PATCH | Ensure suspicious packets are logged] **********************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.log_martians', u'value': 1})
+ok: [util01.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.log_martians', u'value': 1})
+changed: [util04.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.log_martians', u'value': 1})
+ok: [util02.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.log_martians', u'value': 1})
+ok: [util01.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.log_martians', u'value': 1})
+changed: [util04.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.log_martians', u'value': 1})
+
+TASK [CentOS7-CIS : SCORED | 3.2.5 | PATCH | Ensure broadcast ICMP requests are ignored] ****************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 3.2.6 | PATCH | Ensure bogus ICMP responses are ignored] *******************************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 3.2.7 | PATCH | Ensure Reverse Path Filtering is enabled] ******************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.rp_filter', u'value': 1})
+changed: [util04.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.rp_filter', u'value': 1})
+ok: [util02.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.all.rp_filter', u'value': 1})
+ok: [util02.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.rp_filter', u'value': 1})
+ok: [util01.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.rp_filter', u'value': 1})
+changed: [util04.dms02.tt076.lan] => (item={u'name': u'net.ipv4.conf.default.rp_filter', u'value': 1})
+
+TASK [CentOS7-CIS : SCORED | 3.2.8 | PATCH | Ensure TCP SYN Cookies is enabled] *************************************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 3.3.1 | PATCH | Ensure IPv6 router advertisements are not accepted] ********************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan] => (item={u'name': u'net.ipv6.conf.all.accept_ra', u'value': 0}) 
+skipping: [util01.dms02.tt076.lan] => (item={u'name': u'net.ipv6.conf.default.accept_ra', u'value': 0}) 
+skipping: [util02.dms02.tt076.lan] => (item={u'name': u'net.ipv6.conf.all.accept_ra', u'value': 0}) 
+skipping: [util02.dms02.tt076.lan] => (item={u'name': u'net.ipv6.conf.default.accept_ra', u'value': 0}) 
+skipping: [util04.dms02.tt076.lan] => (item={u'name': u'net.ipv6.conf.all.accept_ra', u'value': 0}) 
+skipping: [util04.dms02.tt076.lan] => (item={u'name': u'net.ipv6.conf.default.accept_ra', u'value': 0}) 
+
+TASK [CentOS7-CIS : SCORED | 3.3.2 | PATCH | Ensure IPv6 redirects are not accepted] ********************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan] => (item={u'name': u'net.ipv6.conf.all.accept_redirects', u'value': 0}) 
+skipping: [util01.dms02.tt076.lan] => (item={u'name': u'net.ipv6.conf.default.accept_redirects', u'value': 0}) 
+skipping: [util02.dms02.tt076.lan] => (item={u'name': u'net.ipv6.conf.all.accept_redirects', u'value': 0}) 
+skipping: [util02.dms02.tt076.lan] => (item={u'name': u'net.ipv6.conf.default.accept_redirects', u'value': 0}) 
+skipping: [util04.dms02.tt076.lan] => (item={u'name': u'net.ipv6.conf.all.accept_redirects', u'value': 0}) 
+skipping: [util04.dms02.tt076.lan] => (item={u'name': u'net.ipv6.conf.default.accept_redirects', u'value': 0}) 
+
+TASK [CentOS7-CIS : NOTSCORED | 3.3.3 | PATCH | Ensure IPv6 is disabled] ********************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 3.4.1 | PATCH | Ensure TCP Wrappers is installed] **************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 3.4.2 | PATCH | Ensure /etc/hosts.allow is configured] *********************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 3.4.3 | PATCH | Ensure /etc/hosts.deny is configured] **********************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 3.4.4 | PATCH | Ensure permissions on /etc/hosts.allow are configured] *****************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 3.4.5 | PATCH | Ensure permissions on /etc/hosts.deny are 644] *************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 3.5.1 | PATCH | Ensure DCCP is disabled] ********************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 3.5.2 | PATCH | Ensure SCTP is disabled] ********************************************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 3.5.3 | PATCH | Ensure RDS is disabled] *********************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 3.5.4 | PATCH | Ensure TIPC is disabled] ********************************************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 3.6 | PATCH | Ensure firewalld is installed and started | CUSTOM] **********************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 3.6 | PATCH | Ensure firewalld is installed and started | CUSTOM] **********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 3.6.4 | PATCH | Ensure outbound and established connections are configured -UDP] ****************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 3.6.4 | PATCH | Ensure outbound and established connections are configured -ICMP] ***************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 3.6.5 | PATCH | Ensure firewall rules exist for all open ports] ************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 4.1.1.1 | PATCH | Ensure audit log storage size is configured] **********************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.1.2 | PATCH | Ensure system is disabled when audit logs are full] ******************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.1.3 | PATCH | Ensure audit logs are not automatically deleted] *********************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.2 | PATCH | Ensure auditd service is enabled] **************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.3 | PATCH | Ensure auditing for processes that start prior to auditd is enabled] ***************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.4 | PATCH | Ensure events that modify date and time information are collected] *****************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.5 | PATCH | Ensure events that modify user/group information are collected] ********************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.6 | PATCH | Ensure events that modify the system's network environment are collected] **********************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.7 | PATCH | Ensure events that modify the system's Mandatory Access Controls are collected] ****************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.8 | PATCH | Ensure login and logout events are collected] **************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.9 | PATCH | Ensure session initiation information is collected] ********************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.10 | PATCH | Ensure discretionary access control permission modification events are collected] *************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.11 | PATCH | Ensure unsuccessful unauthorized file access attempts are collected] **************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.12 | PATCH | Ensure use of privileged commands is collected] ***********************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.13 | PATCH | Ensure successful file system mounts are collected] *******************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.13 | PATCH | Ensure successful file system mounts are collected] *******************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.13 | PATCH | Ensure successful file system mounts are collected] *******************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.14 | PATCH | Ensure file deletion events by users are collected] *******************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.15 | PATCH | Ensure changes to system administration scope (sudoers) is collected] *************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.15 | PATCH | Ensure changes to system administration scope (sudoers) is collected] *************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.15 | PATCH | Ensure changes to system administration scope (sudoers) is collected] *************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.16 | PATCH | Ensure system administrator actions (sudolog) are collected] **********************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.17 | PATCH | Ensure kernel module loading and unloading is collected] **************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.1.18 | PATCH | Ensure the audit configuration is immutable] **************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.2.1.1 | PATCH | Ensure rsyslog Service is enabled] ***********************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 4.2.1.2 | PATCH | Ensure logging is configured] *************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.2.1.3 | PATCH | Ensure rsyslog default file permissions configured] ******************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.2.1.4 | PATCH | Ensure rsyslog is configured to send logs to a remote log host] ******************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 4.2.1.5 | PATCH | Ensure remote rsyslog messages are only accepted on designated log hosts. | NON-LOG SERVER] ***********************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 4.2.1.5 | PATCH | Ensure remote rsyslog messages are only accepted on designated log hosts. | NON-LOG SERVER] ***********************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 4.2.1.5 | PATCH | Ensure remote rsyslog messages are only accepted on designated log hosts. | LOG SERVER] ***************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 4.2.1.5 | PATCH | Ensure remote rsyslog messages are only accepted on designated log hosts. | LOG SERVER] ***************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.2.2.1 | PATCH | Ensure syslog-ng service is enabled] *********************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 4.2.2.2 | PATCH | Ensure logging is configured] *************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.2.2.3 | PATCH | Ensure syslog-ng default file permissions configured] ****************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 4.2.2.4 | PATCH | Ensure syslog-ng is configured to send logs to a remote log host] *************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 4.2.2.5 | PATCH | Ensure remote syslog-ng messages are only accepted on designated log hosts] ***************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.2.3 | PATCH | Ensure rsyslog or syslog-ng is installed] ******************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.2.3 | PATCH | Ensure rsyslog or syslog-ng is installed] ******************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 4.2.4 | PATCH | Ensure permissions on all logfiles are configured] *********************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 4.3 | PATCH | Ensure logrotate is configured] ***************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.1.1 | PATCH | Ensure cron daemon is enabled] *****************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.1.2 | PATCH | Ensure permissions on /etc/crontab are configured] *********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.1.3 | PATCH | Ensure permissions on /etc/cron.hourly are configured] *****************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.1.4 | PATCH | Ensure permissions on /etc/cron.daily are configured] ******************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.1.5 | PATCH | Ensure permissions on /etc/cron.weekly are configured] *****************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.1.6 | PATCH | Ensure permissions on /etc/cron.monthly are configured] ****************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.1.7 | PATCH | Ensure permissions on /etc/cron.d are configured] **********************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.1.8 | PATCH | Ensure at/cron is restricted to authorized users] **********************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.1.8 | PATCH | Ensure at/cron is restricted to authorized users] **********************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.1.8 | PATCH | Ensure at/cron is restricted to authorized users] **********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.1.8 | PATCH | Ensure at/cron is restricted to authorized users] **********************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.1 | PATCH | Ensure permissions on /etc/ssh/sshd_config are configured] *************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.2 | PATCH | Ensure SSH Protocol is set to 2] ***************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.3 | PATCH | Ensure SSH LogLevel is set to INFO] ************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.4 | PATCH | Ensure SSH X11 forwarding is disabled] *********************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.5 | PATCH | Ensure SSH MaxAuthTries is set to 4 or less] ***************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.6 | PATCH | Ensure SSH IgnoreRhosts is enabled] ************************************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.7 | PATCH | Ensure SSH HostbasedAuthentication is disabled] ************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.8 | PATCH | Ensure SSH root login is disabled] *************************************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.9 | PATCH | Ensure SSH PermitEmptyPasswords is disabled] ***************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.10 | PATCH | Ensure SSH PermitUserEnvironment is disabled] *************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.11 | PATCH | Ensure only approved MAC algorithms are used] *************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.12 | PATCH | Ensure SSH Idle Timeout Interval is configured] ***********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.12 | PATCH | Ensure SSH Idle Timeout Interval is configured] ***********************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.12 | PATCH | Ensure SSH Idle Timeout Interval is configured] ***********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.12 | PATCH | Ensure SSH Idle Timeout Interval is configured] ***********************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.12 | PATCH | Ensure SSH Idle Timeout Interval is configured] ***********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.12 | PATCH | Ensure SSH Idle Timeout Interval is configured] ***********************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.13 | PATCH | Ensure SSH LoginGraceTime is set to one minute or less] ***************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.2.15 | PATCH | Ensure SSH warning banner is configured] ******************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.3.1 | PATCH | Ensure password creation requirements are configured] ******************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan] => (item={u'value': u'14', u'key': u'minlen'})
+ok: [util01.dms02.tt076.lan] => (item={u'value': u'14', u'key': u'minlen'})
+changed: [util04.dms02.tt076.lan] => (item={u'value': u'14', u'key': u'minlen'})
+ok: [util02.dms02.tt076.lan] => (item={u'value': u'-1', u'key': u'dcredit'})
+ok: [util01.dms02.tt076.lan] => (item={u'value': u'-1', u'key': u'dcredit'})
+changed: [util04.dms02.tt076.lan] => (item={u'value': u'-1', u'key': u'dcredit'})
+ok: [util02.dms02.tt076.lan] => (item={u'value': u'-1', u'key': u'ucredit'})
+ok: [util01.dms02.tt076.lan] => (item={u'value': u'-1', u'key': u'ucredit'})
+ok: [util02.dms02.tt076.lan] => (item={u'value': u'-1', u'key': u'ocredit'})
+changed: [util04.dms02.tt076.lan] => (item={u'value': u'-1', u'key': u'ucredit'})
+ok: [util01.dms02.tt076.lan] => (item={u'value': u'-1', u'key': u'ocredit'})
+ok: [util02.dms02.tt076.lan] => (item={u'value': u'-1', u'key': u'lcredit'})
+ok: [util01.dms02.tt076.lan] => (item={u'value': u'-1', u'key': u'lcredit'})
+changed: [util04.dms02.tt076.lan] => (item={u'value': u'-1', u'key': u'ocredit'})
+changed: [util04.dms02.tt076.lan] => (item={u'value': u'-1', u'key': u'lcredit'})
+
+TASK [CentOS7-CIS : SCORED | 5.3.3 | Ensure password reuse is limited] **********************************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.3.3 | Ensure password reuse is limited] **********************************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.3.3 | Ensure password reuse is limited] **********************************************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan] => (item=system-auth)
+ok: [util02.dms02.tt076.lan] => (item=system-auth)
+ok: [util01.dms02.tt076.lan] => (item=system-auth)
+ok: [util02.dms02.tt076.lan] => (item=password-auth)
+ok: [util01.dms02.tt076.lan] => (item=password-auth)
+changed: [util04.dms02.tt076.lan] => (item=password-auth)
+
+TASK [CentOS7-CIS : SCORED | 5.3.3 | Ensure password reuse is limited] **********************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan] => (item=system-auth) 
+skipping: [util01.dms02.tt076.lan] => (item=password-auth) 
+skipping: [util02.dms02.tt076.lan] => (item=system-auth) 
+skipping: [util02.dms02.tt076.lan] => (item=password-auth) 
+skipping: [util04.dms02.tt076.lan] => (item=system-auth) 
+skipping: [util04.dms02.tt076.lan] => (item=password-auth) 
+
+TASK [CentOS7-CIS : SCORED | 5.3.4 | PATCH | Ensure password hashing algorithm is SHA-512] **************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan] => (item=system-auth)
+ok: [util02.dms02.tt076.lan] => (item=system-auth)
+ok: [util01.dms02.tt076.lan] => (item=system-auth)
+ok: [util02.dms02.tt076.lan] => (item=password-auth)
+ok: [util01.dms02.tt076.lan] => (item=password-auth)
+ok: [util04.dms02.tt076.lan] => (item=password-auth)
+
+TASK [CentOS7-CIS : SCORED | 5.4.1.2 | PATCH | Ensure minimum days between password changes is 7 or more] ***********************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.4.1.3 | PATCH | Ensure password expiration warning days is 7 or more] ****************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.4.1.5 | Ensure all users last password change date is in the past (Scored)] **********************************************************************************************************************************
+ok: [util01.dms02.tt076.lan] => {
+    "msg": "Confirm all password change dates are in the past."
+}
+ok: [util02.dms02.tt076.lan] => {
+    "msg": "Confirm all password change dates are in the past."
+}
+ok: [util04.dms02.tt076.lan] => {
+    "msg": "Confirm all password change dates are in the past."
+}
+
+TASK [CentOS7-CIS : SCORED | 5.4.2 | PATCH | Ensure system accounts are non-login] **********************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.4.2 | PATCH | Ensure system accounts are non-login] **********************************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.4.2 | PATCH | Ensure system accounts are non-login] **********************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.4.3 | PATCH | Ensure default group for the root account is GID 0] ********************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.4.4 | PATCH | Ensure default user umask is 027 or more restrictive] ******************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.4.4 | PATCH | Ensure default user umask is 027 or more restrictive] ******************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.4.4 | PATCH | Ensure default user umask is 027 or more restrictive] ******************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.4.4 | PATCH | Ensure default user umask is 027 or more restrictive] ******************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1641845150.747564, u'gr_name': u'root', u'path': u'/etc/profile.d/colorgrep.sh', u'xusr': False, u'atime': 1641845150.797559, u'inode': 2123405, u'isgid': False, u'size': 210, u'isdir': False, u'ctime': 1641845150.747564, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+changed: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1490373549.0, u'gr_name': u'root', u'path': u'/etc/profile.d/colorgrep.sh', u'xusr': False, u'atime': 1641844663.3899224, u'inode': 2139132, u'isgid': False, u'size': 201, u'isdir': False, u'ctime': 1545077139.9070325, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1641845150.67001, u'gr_name': u'root', u'path': u'/etc/profile.d/colorgrep.sh', u'xusr': False, u'atime': 1641845150.7030132, u'inode': 2780202, u'isgid': False, u'size': 210, u'isdir': False, u'ctime': 1641845150.6710105, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util02.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1641845151.317507, u'gr_name': u'root', u'path': u'/etc/profile.d/colorls.sh', u'xusr': False, u'atime': 1641845151.371502, u'inode': 2123409, u'isgid': False, u'size': 1615, u'isdir': False, u'ctime': 1641845151.3175075, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1641845151.112045, u'gr_name': u'root', u'path': u'/etc/profile.d/colorls.sh', u'xusr': False, u'atime': 1641845151.1470487, u'inode': 2780203, u'isgid': False, u'size': 1615, u'isdir': False, u'ctime': 1641845151.1120458, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+changed: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1605537620.0, u'gr_name': u'root', u'path': u'/etc/profile.d/colorls.sh', u'xusr': False, u'atime': 1641844663.510932, u'inode': 2105587, u'isgid': False, u'size': 1606, u'isdir': False, u'ctime': 1615983699.225723, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util02.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1641845151.89145, u'gr_name': u'root', u'path': u'/etc/profile.d/which2.sh', u'xusr': False, u'atime': 1641845151.983441, u'inode': 2123423, u'isgid': False, u'size': 178, u'isdir': False, u'ctime': 1641845151.8924503, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1641845151.539079, u'gr_name': u'root', u'path': u'/etc/profile.d/which2.sh', u'xusr': False, u'atime': 1641845151.590084, u'inode': 2780204, u'isgid': False, u'size': 178, u'isdir': False, u'ctime': 1641845151.53908, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+changed: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1390855670.0, u'gr_name': u'root', u'path': u'/etc/profile.d/which2.sh', u'xusr': False, u'atime': 1641844663.5909386, u'inode': 2155762, u'isgid': False, u'size': 169, u'isdir': False, u'ctime': 1545077141.7670326, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util02.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1641845152.385401, u'gr_name': u'root', u'path': u'/etc/profile.d/less.sh', u'xusr': False, u'atime': 1641845152.4623935, u'inode': 2139010, u'isgid': False, u'size': 130, u'isdir': False, u'ctime': 1641845152.3864012, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1641845151.968114, u'gr_name': u'root', u'path': u'/etc/profile.d/less.sh', u'xusr': False, u'atime': 1641845152.031119, u'inode': 2780205, u'isgid': False, u'size': 130, u'isdir': False, u'ctime': 1641845151.9691143, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+changed: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1438300022.0, u'gr_name': u'root', u'path': u'/etc/profile.d/less.sh', u'xusr': False, u'atime': 1641844663.520933, u'inode': 2242586, u'isgid': False, u'size': 121, u'isdir': False, u'ctime': 1545077146.6660328, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util02.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1641845152.907406, u'gr_name': u'root', u'path': u'/etc/profile.d/256term.sh', u'xusr': False, u'atime': 1641845152.9724119, u'inode': 2139012, u'isgid': False, u'size': 850, u'isdir': False, u'ctime': 1641845152.9084067, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+changed: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1605543616.0, u'gr_name': u'root', u'path': u'/etc/profile.d/256term.sh', u'xusr': False, u'atime': 1641844663.3809216, u'inode': 2290008, u'isgid': False, u'size': 841, u'isdir': False, u'ctime': 1615983712.878821, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1641845152.433151, u'gr_name': u'root', u'path': u'/etc/profile.d/256term.sh', u'xusr': False, u'atime': 1641845152.4661539, u'inode': 2780206, u'isgid': False, u'size': 850, u'isdir': False, u'ctime': 1641845152.4341514, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util02.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1641845153.458452, u'gr_name': u'root', u'path': u'/etc/profile.d/lang.sh', u'xusr': False, u'atime': 1641845153.5104568, u'inode': 2139048, u'isgid': False, u'size': 2712, u'isdir': False, u'ctime': 1641845153.4584525, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+changed: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1605543616.0, u'gr_name': u'root', u'path': u'/etc/profile.d/lang.sh', u'xusr': False, u'atime': 1641821336.6770883, u'inode': 2290010, u'isgid': False, u'size': 2703, u'isdir': False, u'ctime': 1615983712.880821, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1641845152.881186, u'gr_name': u'root', u'path': u'/etc/profile.d/lang.sh', u'xusr': False, u'atime': 1641845152.9151897, u'inode': 2780207, u'isgid': False, u'size': 2712, u'isdir': False, u'ctime': 1641845152.881187, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util02.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1641845153.91049, u'gr_name': u'root', u'path': u'/etc/profile.d/vim.sh', u'xusr': False, u'atime': 1641845153.9574938, u'inode': 2139086, u'isgid': False, u'size': 278, u'isdir': False, u'ctime': 1641845153.91149, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+changed: [util04.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1608050650.0, u'gr_name': u'root', u'path': u'/etc/profile.d/vim.sh', u'xusr': False, u'atime': 1641844663.5679367, u'inode': 2526314, u'isgid': False, u'size': 269, u'isdir': False, u'ctime': 1615983742.3771927, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+ok: [util01.dms02.tt076.lan] => (item={u'islnk': False, u'uid': 0, u'rgrp': True, u'xoth': False, u'rusr': True, u'woth': False, u'nlink': 1, u'issock': False, u'mtime': 1641845153.335223, u'gr_name': u'root', u'path': u'/etc/profile.d/vim.sh', u'xusr': False, u'atime': 1641845153.3822272, u'inode': 2780208, u'isgid': False, u'size': 278, u'isdir': False, u'ctime': 1641845153.3362234, u'roth': True, u'isblk': False, u'xgrp': False, u'isuid': False, u'dev': 64768, u'wgrp': False, u'isreg': True, u'isfifo': False, u'mode': u'0644', u'pw_name': u'root', u'gid': 0, u'ischr': False, u'wusr': True})
+
+TASK [CentOS7-CIS : SCORED | 5.4.5 | PATCH | Ensure default user shell timeout is 900 seconds or less] **************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.4.5 | PATCH | Ensure default user shell timeout is 900 seconds or less] **************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.6 | PATCH | Ensure access to the su command is restricted] ***************************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 5.6 | PATCH | Ensure access to the su command is restricted] ***************************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 6.1.1 | PATCH | Audit system file permissions] **************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.1.2 | PATCH | Ensure permissions on /etc/passwd are configured] **********************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.1.3 | PATCH | Ensure permissions on /etc/shadow are configured] **********************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.1.4 | PATCH | Ensure permissions on /etc/group are configured] ***********************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.1.5 | PATCH | Ensure permissions on /etc/gshadow are configured] *********************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.1.6 | PATCH | Ensure permissions on /etc/passwd- are configured] *********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.1.7 | PATCH | Ensure permissions on /etc/shadow- are configured] *********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.1.8 | PATCH | Ensure permissions on /etc/group- are configured] **********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.1.9 | PATCH | Ensure permissions on /etc/gshadow- are configured] ********************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.1.10 | PATCH | Ensure no world writable files exist] *********************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.1.11 | PATCH | Ensure no unowned files or directories exist] *************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.1.12 | PATCH | Ensure no ungrouped files or directories exist] ***********************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 6.1.13 | PATCH | Audit SUID executables] ********************************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : NOTSCORED | 6.1.14 | PATCH | Audit SGID executables] ********************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.1 | PATCH | Ensure password fields are not empty] **********************************************************************************************************************************************************
+
+TASK [CentOS7-CIS : SCORED | 6.2.2 | PATCH | Ensure no legacy '+' entries exist in /etc/passwd] *********************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.3 | PATCH | Ensure no legacy '+' entries exist in /etc/shadow] *********************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.4 | PATCH | Ensure no legacy '+' entries exist in /etc/group] **********************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.5 | PATCH | Ensure root is the only UID 0 account] *********************************************************************************************************************************************************
+
+TASK [CentOS7-CIS : SCORED | 6.2.6 | PATCH | Ensure root PATH Integrity] ********************************************************************************************************************************************************************
+changed: [util01.dms02.tt076.lan]
+changed: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.6 | PATCH | Ensure root PATH Integrity] ********************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.6 | PATCH | Ensure root PATH Integrity] ********************************************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.6 | PATCH | Ensure root PATH Integrity] ********************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.6 | PATCH | Ensure root PATH Integrity] ********************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.7 | PATCH | Ensure all users' home directories exist] ******************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.7 | PATCH | Ensure all users' home directories exist] ******************************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.7 | PATCH | Ensure all users' home directories exist] ******************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.7 | All users' home directories exist."
+}
+ok: [util02.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.7 | All users' home directories exist."
+}
+ok: [util04.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.7 | All users' home directories exist."
+}
+
+TASK [CentOS7-CIS : SCORED | 6.2.7 | PATCH | Ensure all users' home directories exist] ******************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.8 | PATCH | Ensure users' home directories permissions are 750 or more restrictive] ************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.8 | PATCH | Ensure users' home directories permissions are 750 or more restrictive] ************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.8 | PATCH | Ensure users' home directories permissions are 750 or more restrictive] ************************************************************************************************************************
+ok: [util01.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.8 | Users' home directories permissions are 750 or more restrictive."
+}
+ok: [util02.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.8 | Users' home directories permissions are 750 or more restrictive."
+}
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.8 | PATCH | Ensure users' home directories permissions are 750 or more restrictive] ************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.9 | PATCH | Ensure users own their home directories] *******************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.9 | PATCH | Ensure users own their home directories] *******************************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.9 | PATCH | Ensure users own their home directories] *******************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.9 | Users' own their home directories."
+}
+ok: [util02.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.9 | Users' own their home directories."
+}
+ok: [util04.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.9 | Users' own their home directories."
+}
+
+TASK [CentOS7-CIS : SCORED | 6.2.9 | PATCH | Ensure users own their home directories] *******************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.10 | PATCH | Ensure users' dot files are not group or world writable] **************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.10 | PATCH | Ensure users' dot files are not group or world writable] **************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.10 | PATCH | Ensure users' dot files are not group or world writable] **************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.10 | Users' dot files are not group or world writable."
+}
+ok: [util02.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.10 | Users' dot files are not group or world writable."
+}
+ok: [util04.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.10 | Users' dot files are not group or world writable."
+}
+
+TASK [CentOS7-CIS : SCORED | 6.2.10 | PATCH | Ensure users' dot files are not group or world writable] **************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.11 | PATCH | Ensure no users have .forward files] **********************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan]
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.12 | PATCH | Ensure no users have .netrc files] ************************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan]
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.13 | PATCH | Ensure users' .netrc files are not group or world accessible] *********************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.13 | PATCH | Ensure users' .netrc files are not group or world accessible] *********************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.13 | PATCH | Ensure users' .netrc files are not group or world accessible] *********************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.13 | PATCH | Ensure users' .netrc Files are not group or world accessible] *********************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan]
+skipping: [util02.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.14 | PATCH | Ensure no users have .rhosts files] ***********************************************************************************************************************************************************
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan] => (item=None) 
+skipping: [util02.dms02.tt076.lan]
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan] => (item=None) 
+skipping: [util01.dms02.tt076.lan]
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan] => (item=None) 
+skipping: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.15 | PATCH | Ensure all groups in /etc/passwd exist in /etc/group] *****************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.15 | PATCH | Ensure all groups in /etc/passwd exist in /etc/group] *****************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.15 | PATCH | Ensure all groups in /etc/passwd exist in /etc/group] *****************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.15 | All groups exist in /etc/group."
+}
+ok: [util02.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.15 | All groups exist in /etc/group."
+}
+ok: [util04.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.15 | All groups exist in /etc/group."
+}
+
+TASK [CentOS7-CIS : SCORED | 6.2.15 | PATCH | Ensure all groups in /etc/passwd exist in /etc/group] *****************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.16 | PATCH | Ensure no duplicate UIDs exist] ***************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.16 | PATCH | Ensure no duplicate UIDs exist] ***************************************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.16 | PATCH | Ensure no duplicate UIDs exist] ***************************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.16 | No duplicate UIDs exist."
+}
+ok: [util02.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.16 | No duplicate UIDs exist."
+}
+ok: [util04.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.16 | No duplicate UIDs exist."
+}
+
+TASK [CentOS7-CIS : SCORED | 6.2.16 | PATCH | Ensure no duplicate UIDs exist] ***************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.17 | PATCH | Ensure no duplicate GIDs exist] ***************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.17 | PATCH | Ensure no duplicate GIDs exist] ***************************************************************************************************************************************************************
+changed: [util01.dms02.tt076.lan]
+changed: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.17 | PATCH | Ensure no duplicate GIDs exist] ***************************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.17 | No duplicate GIDs exist."
+}
+ok: [util02.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.17 | No duplicate GIDs exist."
+}
+ok: [util04.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.17 | No duplicate GIDs exist."
+}
+
+TASK [CentOS7-CIS : SCORED | 6.2.17 | PATCH | Ensure no duplicate GIDs exist] ***************************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.18 | PATCH | Ensure no duplicate user names exist] *********************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.18 | PATCH | Ensure no duplicate user names exist] *********************************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.18 | PATCH | Ensure no duplicate user names exist] *********************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.18 | No duplicate user names exist"
+}
+ok: [util02.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.18 | No duplicate user names exist"
+}
+ok: [util04.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.18 | No duplicate user names exist"
+}
+
+TASK [CentOS7-CIS : SCORED | 6.2.18 | PATCH | Ensure no duplicate user names exist] *********************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.19 | PATCH | Ensure no duplicate group names exist] ********************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.19 | PATCH | Ensure no duplicate group names exist] ********************************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : SCORED | 6.2.19 | PATCH | Ensure no duplicate group names exist] ********************************************************************************************************************************************************
+ok: [util01.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.19 | No duplicate group names exist"
+}
+ok: [util02.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.19 | No duplicate group names exist"
+}
+ok: [util04.dms02.tt076.lan] => {
+    "msg": "PASS | 6.2.19 | No duplicate group names exist"
+}
+
+TASK [CentOS7-CIS : SCORED | 6.2.19 | PATCH | Ensure no duplicate group names exist] ********************************************************************************************************************************************************
+ok: [util04.dms02.tt076.lan]
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+
+TASK [CentOS7-CIS : Perform YUM package cleanup] ********************************************************************************************************************************************************************************************
+ok: [util02.dms02.tt076.lan]
+ok: [util01.dms02.tt076.lan]
+ok: [util04.dms02.tt076.lan]
+
+RUNNING HANDLER [CentOS7-CIS : sysctl flush ipv4 route table] *******************************************************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+
+RUNNING HANDLER [CentOS7-CIS : restart xinetd] **********************************************************************************************************************************************************************************************
+changed: [util02.dms02.tt076.lan]
+changed: [util04.dms02.tt076.lan]
+changed: [util01.dms02.tt076.lan]
+
+RUNNING HANDLER [CentOS7-CIS : systemctl restart postfix] ***********************************************************************************************************************************************************************************
+changed: [util04.dms02.tt076.lan]
+
+PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+util01.dms02.tt076.lan     : ok=233  changed=32   unreachable=0    failed=0    skipped=99   rescued=0    ignored=0   
+util02.dms02.tt076.lan     : ok=233  changed=32   unreachable=0    failed=0    skipped=99   rescued=0    ignored=0   
+util04.dms02.tt076.lan     : ok=234  changed=82   unreachable=0    failed=0    skipped=100  rescued=0    ignored=0   
+
