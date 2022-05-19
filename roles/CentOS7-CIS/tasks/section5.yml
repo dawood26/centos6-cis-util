@@ -310,6 +310,7 @@
     - patch
     - rule_5.2.12
 
+
 - name: "SCORED | 5.2.12 | PATCH | Ensure SSH Idle Timeout Interval is configured"
   lineinfile:
     state: present
@@ -322,6 +323,7 @@
     - level1
     - patch
     - rule_5.2.12
+  ignore_errors: yes
 
 - name: "SCORED | 5.2.12 | PATCH | Ensure SSH Idle Timeout Interval is configured"
   replace:
@@ -329,14 +331,14 @@
     regexp: '^ClientAliveInterval(.*)?$'
     replace: 'ClientAliveInterval 300'
     backup: yes
-  ignore_errors: yes
+  
   when:
     - centos7cis_level1 is defined and centos7cis_level1
   tags:
     - level1
     - patch
     - rule_5.2.12
-
+  ignore_errors: yes
 - name: "SCORED | 5.2.12 | PATCH | Ensure SSH Idle Timeout Interval is configured"
   lineinfile:
     state: absent
@@ -348,6 +350,7 @@
     - level1
     - patch
     - rule_5.2.12
+  ignore_errors: yes
 
 - name: "SCORED | 5.2.12 | PATCH | Ensure SSH Idle Timeout Interval is configured"
   lineinfile:
@@ -361,6 +364,7 @@
     - level1
     - patch
     - rule_5.2.12
+  ignore_errors: yes
 
 - name: "SCORED | 5.2.12 | PATCH | Ensure SSH Idle Timeout Interval is configured"
   replace:
@@ -375,6 +379,7 @@
     - level1
     - patch
     - rule_5.2.12
+  ignore_errors: yes
 
 - name: "SCORED | 5.2.13 | PATCH | Ensure SSH LoginGraceTime is set to one minute or less"
   lineinfile:
@@ -388,6 +393,7 @@
     - level1
     - patch
     - rule_5.2.13
+  ignore_errors: yes
 
 #- name: "SCORED | 5.2.14 | PATCH | Ensure SSH access is limited"
 #  command: /bin/true
@@ -431,6 +437,7 @@
     - level1
     - patch
     - rule_5.3.1
+  ignore_errors: yes
 
 # auth required pam_faillock.so preauth audit silent deny=5 unlock_time=900
 # auth [default=die] pam_faillock.so authfail audit deny=5 unlock_time=900

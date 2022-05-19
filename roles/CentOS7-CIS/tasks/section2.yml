@@ -480,6 +480,7 @@
     - patch
     - rule_2.2.3
     - disable_service_checks
+  ignore_errors: yes
 
 - name: "SCORED | 2.2.4 | PATCH | Ensure CUPS is not enabled"
   service:
@@ -498,6 +499,7 @@
     - patch
     - rule_2.2.4
     - disable_service_checks
+  ignore_errors: yes
 
 - name: "SCORED | 2.2.5 | PATCH | Ensure DHCP Server is not enabled"
   service:
